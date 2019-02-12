@@ -1,4 +1,10 @@
 <category id="catWebFetch">
-  <block type="web_fetch"></block>
+  <block type="web_fetch">
+      <value name="data_">
+        <block type="text">
+          <field name="TEXT">網址</field>
+        </block>
+      </value>
+  </block>
   <block type="web_fetch_val"></block>
 </category>

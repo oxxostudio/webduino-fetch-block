@@ -1,1 +1,1 @@
-MSG.catWeather = "Web Fetch";
+MSG.catWebFetch = "Web Fetch";
