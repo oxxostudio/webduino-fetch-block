@@ -3,7 +3,7 @@ Blockly.Blocks['web_fetch'] = {
     this.appendValueInput("data_")
       .setCheck(null)
       .appendField("取得內容")
-      .appendField(new Blockly.FieldDropdown([["text", ".text()"], ["json", ".json()"]]), "type_");
+      .appendField(new Blockly.FieldDropdown([["text", "text"], ["json", "json"]]), "type_");
     this.appendStatementInput("do_")
       .setCheck(null)
       .appendField("執行");
