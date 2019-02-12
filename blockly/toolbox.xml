@@ -1,0 +1,4 @@
+<category id="catWebFetch">
+  <block type="web_fetch"></block>
+  <block type="web_fetch_val"></block>
+</category>
