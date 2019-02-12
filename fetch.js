@@ -8,3 +8,6 @@ function web_fetch(format, url, callback) {
       callback(data);
     });
 }
+
+
+window.web_fetch = web_fetch;
