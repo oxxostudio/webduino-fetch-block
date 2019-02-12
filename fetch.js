@@ -1,13 +1,19 @@
-function web_fetch(format, url, callback) {
-  $.post('https://script.google.com/macros/s/AKfycbxB4D95_idSBo_cjG5GY6IkS-uuj5VpK7lrMiuY4R2rlEFDU30/exec', {
-    type: 'fetch',
-    format: format,
-    url: url
-  },
-    function (data) {
-      callback(data);
-    });
-}
++(function (window, document) {
+
+  'use strict';
+
+  function web_fetch(format, url, callback) {
+    $.post('https://script.google.com/macros/s/AKfycbxB4D95_idSBo_cjG5GY6IkS-uuj5VpK7lrMiuY4R2rlEFDU30/exec', {
+      type: 'fetch',
+      format: format,
+      url: url
+    },
+      function (data) {
+        callback(data);
+      });
+  }
 
 
-window.web_fetch = web_fetch;
+  window.web_fetch = web_fetch;
+
+}(window, window.document));
