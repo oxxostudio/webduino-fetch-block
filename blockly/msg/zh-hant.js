@@ -1,1 +1,1 @@
-MSG.catWebFetch = "Web Fetch";
+MSG.catWebFetch = "WebFetch";
