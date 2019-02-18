@@ -6,6 +6,11 @@
     <value name="VALUE">
       <block type="web_fetch_val"></block>
     </value>
+    <value name="url_">
+      <block type="text">
+        <field name="TEXT">網址</field>
+      </block>
+    </value>
   </block>
   <block type="variables_set">
     <field name="VAR">圖片陣列</field>
