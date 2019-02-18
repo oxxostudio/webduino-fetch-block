@@ -1,5 +1,5 @@
 {
-  "types": ["web_fetch","web_fetch_val"],
+  "types": ["web_fetch","web_fetch_val","web_fetch_val_to_json","web_fetch_get_json_keys","web_fetch_get_json_values","web_fetch_get_image"],
   "category": "catPlus",
   "scripts": [
     "blockly/blocks.js",

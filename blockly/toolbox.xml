@@ -1,10 +1,55 @@
 <category id="catWebFetch">
-  <block type="web_fetch">
-      <value name="data_">
-        <block type="text">
-          <field name="TEXT">網址</field>
-        </block>
-      </value>
+  <block type="web_fetch"></block>
+
+  <block type="variables_set">
+    <field name="VAR">純文字</field>
+    <value name="VALUE">
+      <block type="web_fetch_val"></block>
+    </value>
   </block>
-  <block type="web_fetch_val"></block>
+  <block type="variables_set">
+    <field name="VAR">圖片陣列</field>
+    <value name="VALUE">
+      <block type="web_fetch_get_image"></block>
+    </value>
+  </block>
+  <block type="variables_set">
+    <field name="VAR">JSON 資料</field>
+    <value name="VALUE">
+      <block type="web_fetch_val_to_json">
+        <value name="json_">
+          <block type="web_fetch_val"></block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="variables_set">
+    <field name="VAR">Value</field>
+    <value name="VALUE">
+      <block type="web_fetch_get_json_values">
+        <value name="name_">
+          <block type="variables_get">
+            <field name="VAR" class="listVar">JSON 資料</field>
+          </block>
+        </value>
+        <value name="key_">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="variables_set">
+    <field name="VAR">Key</field>
+    <value name="VALUE">
+      <block type="web_fetch_get_json_keys">
+        <value name="name_">
+          <block type="variables_get">
+            <field name="VAR" class="listVar">JSON 資料</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
 </category>
