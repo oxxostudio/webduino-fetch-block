@@ -1,4 +1,4 @@
-<category id="catWebFetch">
+<category id="catWebFetch" COLOUR="210">
   <block type="web_fetch"></block>
   <block type="web_fetch_val"></block>
   <block type="variables_set">

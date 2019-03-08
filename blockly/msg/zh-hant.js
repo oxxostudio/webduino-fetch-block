@@ -1,1 +1,1 @@
-MSG.catWebFetch = "WebFetch";
+MSG.catWebFetch = "網路爬蟲";
